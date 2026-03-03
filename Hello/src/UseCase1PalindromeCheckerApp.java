@@ -24,7 +24,10 @@ public class UseCase1PalindromeCheckerApp {
     /**
      * Application entry point.
      *
-     * @param args command-line arguments
+     * This is the first method executed by the JVM
+     * when the program starts.
+     *
+     * @param args Command-line arguments
      */
     public static void main(String[] args) {
         System.out.println("Welcome to the Palindrome Checker Management System");

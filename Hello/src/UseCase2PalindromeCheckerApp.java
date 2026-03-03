@@ -29,11 +29,12 @@ public class UseCase2PalindromeCheckerApp {
      * @param args Command-line arguments
      */
     public static void main(String[] args) {
-        String input = "madam";
+        String input = "Nurses Run";
+        String normalizedInput = input.replaceAll("\\s+", "").toLowerCase();
         boolean isPalindrome = true;
 
-        for (int i = 0; i < input.length() / 2; i++) {
-            if (input.charAt(i) != input.charAt(input.length() - 1 - i)) {
+        for (int i = 0; i < normalizedInput.length() / 2; i++) {
+            if (normalizedInput.charAt(i) != normalizedInput.charAt(normalizedInput.length() - 1 - i)) {
                 isPalindrome = false;
                 break;
             }

@@ -1,21 +1,45 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by Fernflower decompiler)
-//
-
+/**
+ * ============================================================
+ * MAIN CLASS - UseCase2PalindromeCheckerApp
+ * ============================================================
+ *
+ * Use Case 2: Hardcoded Palindrome Validation
+ *
+ * Description:
+ * This class demonstrates basic palindrome validation
+ * using a hardcoded string value.
+ *
+ * At this stage, the application:
+ * - Stores a predefined string
+ * - Compares characters from both ends
+ * - Determines whether the string is a palindrome
+ * - Displays the result on the console
+ *
+ * This use case introduces fundamental comparison logic
+ * before using advanced data structures.
+ *
+ * @author Developer
+ * @version 2.0
+ */
 public class UseCase2PalindromeCheckerApp {
-    public static void main(String[] var0) {
-        String var1 = "madam";
-        boolean var2 = true;
 
-        for(int var3 = 0; var3 < var1.length() / 2; ++var3) {
-            if (var1.charAt(var3) != var1.charAt(var1.length() - 1 - var3)) {
-                var2 = false;
+    /**
+     * Application entry point for UC2.
+     *
+     * @param args Command-line arguments
+     */
+    public static void main(String[] args) {
+        String input = "madam";
+        boolean isPalindrome = true;
+
+        for (int i = 0; i < input.length() / 2; i++) {
+            if (input.charAt(i) != input.charAt(input.length() - 1 - i)) {
+                isPalindrome = false;
                 break;
             }
         }
 
-        System.out.println("Input text: " + var1);
-        System.out.println("Is it a Palindrome? : " + var2);
+        System.out.println("Input text: " + input);
+        System.out.println("Is it a Palindrome? : " + isPalindrome);
     }
 }
